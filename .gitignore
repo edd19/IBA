@@ -219,6 +219,7 @@ pip-log.txt
 ## LATEX
 ########
 
+*.out
 *.pdf
 *.log
 *.aux
