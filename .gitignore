@@ -224,3 +224,10 @@ pip-log.txt
 *.log
 *.aux
 *.gz
+
+#####################
+## Bibliography Latex
+#####################
+
+*.bbl
+*.blg
