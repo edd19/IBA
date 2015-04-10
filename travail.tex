@@ -1,7 +1,7 @@
 \documentclass[a4paper, 12pt]{article}
 
 \usepackage[frenchb]{babel} % Document en français
-\usepackage[utf8]{inputenc} % Document au format UTF8
+\usepackage[utf8x]{inputenc} % Document au format UTF8
 \usepackage[T1]{fontenc} % Suppression d'un warning pour la langue francaise
 %\usepackage[left=2.2cm, right=2.2cm, top=2.5cm, bottom=2.5cm]{geometry} % Mise en page
 \usepackage{setspace} % Permet de définir l'interligne
@@ -15,18 +15,19 @@
 \graphicspath{{res/}}
 
 \usepackage{newtxtext,newtxmath} % pour la police time
+\usepackage[hyphens]{url}
 \usepackage{hyperref}
-
+\urlstyle{same}
 \begin{document}
 \include{titlepage}
 
 %\maketitle
-
-%\tableofcontents
+\thispagestyle{empty}
+\tableofcontents
+\pagebreak
+\setcounter{page}{1}
 \input{introduction.tex}
-\section{Présentation des différents conférenciers}
 \input{presentation_drh.tex}
-\input{alain_goergen.tex}
 
 %Comparaison des rôles RH
 \input{comparaison_roles.tex}
@@ -45,8 +46,7 @@
 %conclusion
 \input{conclusion.tex}
 
-\pagebreak
-\bibliographystyle{plain}
-\bibliography{biblio}
+%bibliographie
+\input{bibliographie}
 
 \end{document}
